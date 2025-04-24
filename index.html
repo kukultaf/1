@@ -1,3 +1,4 @@
+<!-- Meta Pixel + Telegram Redirect -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,7 +21,7 @@
 
 <body style="font-family:Arial, sans-serif; text-align:center; padding-top:100px;">
   <h2>Переход в Telegram...</h2>
-  <p>Если вы не были перенаправлены, <a href="https://t.me/YourTelegramGroup">нажмите здесь</a></p>
+  <p>Если вы не были перенаправлены, <a href="https://t.me/+Ee6v1rvTeF43Mzc8">нажмите здесь</a></p>
 
   <script>
     // Событие Meta Pixel
@@ -28,17 +29,10 @@
       fbq('trackCustom', 'TelegramClick');
     }, 300);
 
-    // Событие для Tilda аналитики
-    setTimeout(function() {
-      if (typeof Tilda !== 'undefined' && typeof Tilda.sendGoal === 'function') {
-        Tilda.sendGoal('telegram_join');
-      }
-    }, 300);
-
     // Редирект
     setTimeout(function() {
-      window.location.href = "https://t.me/YourTelegramGroup";
-    }, 2000);  // Задержка 2 секунды перед редиректом
+      window.location.href = "https://t.me/+Ee6v1rvTeF43Mzc8";
+    }, 700);
   </script>
 
   <noscript><img height="1" width="1" style="display:none"
